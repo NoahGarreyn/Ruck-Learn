@@ -1,0 +1,208 @@
+.error {
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+  margin: var(--space-3) 0;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+  height: calc(100vh - 220px);
+  min-height: 460px;
+}
+
+.sidebar {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  overflow: hidden;
+}
+
+.newSelect {
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-mauve-300);
+  background: var(--color-mauve-50);
+  color: var(--color-mauve-700);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.convList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  overflow-y: auto;
+}
+
+.convItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: var(--space-2) var(--space-3);
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-sm);
+  text-align: left;
+  cursor: pointer;
+  font-family: var(--font-body);
+}
+
+.convItem:hover {
+  background: var(--color-mauve-50);
+}
+
+.convActive {
+  background: var(--color-mauve-100);
+}
+
+.convName {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-green-500);
+}
+
+.convPreview {
+  font-size: var(--fs-xs);
+  color: var(--color-gray-500);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.empty {
+  font-size: var(--fs-sm);
+  color: var(--color-gray-500);
+  padding: var(--space-2) var(--space-3);
+}
+
+.chat {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.placeholder {
+  color: var(--color-gray-500);
+  font-size: var(--fs-sm);
+  padding: var(--space-6);
+}
+
+.chatHeader {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--color-gray-100);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.chatRole {
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  color: var(--color-mauve-700);
+  background: var(--color-mauve-100);
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-sm);
+  text-transform: capitalize;
+}
+
+.thread {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.bubble {
+  align-self: flex-start;
+  max-width: 70%;
+  background: var(--color-gray-100);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+}
+
+.mine {
+  align-self: flex-end;
+  background: var(--color-mauve-500);
+  color: var(--color-white);
+}
+
+.bubbleText {
+  margin: 0;
+  font-size: var(--fs-sm);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.bubbleDate {
+  display: block;
+  font-size: 10px;
+  opacity: 0.7;
+  margin-top: 2px;
+}
+
+.sendForm {
+  display: flex;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  border-top: 1px solid var(--color-gray-100);
+}
+
+.sendInput {
+  flex: 1;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+}
+
+.sendInput:focus {
+  outline: 2px solid var(--color-mauve-300);
+  border-color: var(--color-mauve-500);
+}
+
+.sendButton {
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-mauve-500);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sendButton:hover:not(:disabled) {
+  background: var(--color-mauve-700);
+}
+
+.sendButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

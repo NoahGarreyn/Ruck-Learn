@@ -1,0 +1,136 @@
+.backLink {
+  display: inline-block;
+  font-size: var(--fs-sm);
+  color: var(--color-mauve-700);
+  margin-bottom: var(--space-4);
+}
+
+.empty {
+  color: var(--color-gray-500);
+  margin-top: var(--space-4);
+}
+
+.error {
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+  margin-top: var(--space-2);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+  max-width: 720px;
+}
+
+.row {
+  background: var(--color-white);
+  padding: var(--space-6);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.studentInfo {
+  border-bottom: 1px solid var(--color-gray-100);
+  padding-bottom: var(--space-2);
+}
+
+.studentName {
+  font-weight: 600;
+}
+
+.studentEmail {
+  font-size: var(--fs-xs);
+  color: var(--color-gray-500);
+}
+
+.content {
+  font-size: var(--fs-sm);
+}
+
+.contentLabel {
+  font-weight: 500;
+  color: var(--color-gray-500);
+  font-size: var(--fs-xs);
+  margin-bottom: var(--space-1);
+}
+
+.contentText {
+  white-space: pre-wrap;
+}
+
+.files {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  margin-top: var(--space-2);
+}
+
+.fileLink {
+  font-size: var(--fs-sm);
+  color: var(--color-green-700);
+}
+
+.fileLink:hover {
+  text-decoration: underline;
+}
+
+.gradeForm {
+  border-top: 1px solid var(--color-gray-100);
+  padding-top: var(--space-3);
+}
+
+.gradeInputs {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+.noteInput {
+  width: 70px;
+  padding: var(--space-2);
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+}
+
+.commentInput {
+  flex: 1;
+  padding: var(--space-2);
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+}
+
+.noteInput:focus,
+.commentInput:focus {
+  outline: 2px solid var(--color-mauve-300);
+  border-color: var(--color-mauve-500);
+}
+
+.gradeButton {
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-mauve-500);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.gradeButton:hover:not(:disabled) {
+  background: var(--color-mauve-700);
+}
+
+.gradeButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

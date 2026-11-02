@@ -1,0 +1,11 @@
+/* frontend/src/layouts/AdminLayout.module.css */
+.layout {
+  display: flex;
+  gap: var(--space-6);
+  align-items: flex-start;
+}
+
+.page {
+  flex: 1;
+  min-width: 0; /* évite les débordements si du contenu large arrive plus tard (tableaux...) */
+}

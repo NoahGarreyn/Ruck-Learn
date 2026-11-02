@@ -1,0 +1,202 @@
+.success {
+  background: var(--color-green-100);
+  color: var(--color-green-700);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+  margin: var(--space-3) 0;
+}
+
+.error {
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+  margin: var(--space-3) 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 560px;
+  background: var(--color-white);
+  padding: var(--space-6);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  margin: var(--space-4) 0 var(--space-6);
+}
+
+.row {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.row .field {
+  flex: 1;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.field label {
+  font-size: var(--fs-sm);
+  font-weight: 500;
+}
+
+.field input,
+.field select,
+.field textarea {
+  padding: var(--space-3);
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  resize: vertical;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: 2px solid var(--color-mauve-300);
+  border-color: var(--color-mauve-500);
+}
+
+.button {
+  padding: var(--space-3);
+  background: var(--color-mauve-500);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button:hover:not(:disabled) {
+  background: var(--color-mauve-700);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.sectionTitle {
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-3);
+}
+
+.empty {
+  color: var(--color-gray-500);
+  font-size: var(--fs-sm);
+}
+
+.dayBlock {
+  max-width: 640px;
+  margin-bottom: var(--space-4);
+}
+
+.dayLabel {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--color-mauve-700);
+  text-transform: capitalize;
+  margin-bottom: var(--space-2);
+}
+
+.event {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-3);
+  background: var(--color-white);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  margin-bottom: var(--space-2);
+}
+
+.muted {
+  opacity: 0.6;
+}
+
+.eventMain {
+  flex: 1;
+  min-width: 0;
+}
+
+.eventTop {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.eventTime {
+  font-size: var(--fs-xs);
+  color: var(--color-gray-500);
+}
+
+.eventTitle {
+  font-weight: 600;
+  margin: var(--space-1) 0 0;
+}
+
+.eventDesc {
+  font-size: var(--fs-sm);
+  color: var(--color-gray-700);
+  margin: var(--space-1) 0 0;
+  white-space: pre-wrap;
+}
+
+.eventFormation {
+  font-size: var(--fs-xs);
+  color: var(--color-gray-500);
+  margin: var(--space-1) 0 0;
+}
+
+.badge {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-sm);
+}
+
+.type_cours {
+  background: var(--color-mauve-100);
+  color: var(--color-mauve-700);
+}
+
+.type_devoir {
+  background: var(--color-warning-bg);
+  color: var(--color-warning);
+}
+
+.type_quiz {
+  background: var(--color-green-100);
+  color: var(--color-green-700);
+}
+
+.type_evenement {
+  background: var(--color-gray-100);
+  color: var(--color-gray-700);
+}
+
+.deleteBtn {
+  padding: var(--space-1) var(--space-3);
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.deleteBtn:hover {
+  background: var(--color-danger);
+  color: var(--color-white);
+}

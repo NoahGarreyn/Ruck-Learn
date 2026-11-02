@@ -1,0 +1,182 @@
+.empty {
+  color: var(--color-gray-500);
+  margin-top: var(--space-4);
+}
+
+.errorPage {
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+}
+
+.error {
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+  margin: var(--space-2) 0;
+}
+
+/* --- Résumé de progression --- */
+.summary {
+  max-width: 480px;
+  margin-top: var(--space-4);
+}
+
+.summaryText {
+  font-size: var(--fs-sm);
+  color: var(--color-gray-700);
+  margin: 0 0 var(--space-2);
+}
+
+.bar {
+  height: 10px;
+  background: var(--color-gray-100);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  background: var(--color-green-500);
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+/* --- Grille de cours ---
+   align-items: start : un cours ouvert s'agrandit sans étirer ses voisins */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+  align-items: start;
+}
+
+.card {
+  background: var(--color-white);
+  padding: var(--space-6);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.cardTitle {
+  font-size: var(--fs-lg);
+  color: var(--color-mauve-700);
+}
+
+.status {
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.statusNone {
+  background: var(--color-gray-100);
+  color: var(--color-gray-700);
+}
+
+.statusProgress {
+  background: var(--color-mauve-100);
+  color: var(--color-mauve-700);
+}
+
+.statusDone {
+  background: var(--color-green-100);
+  color: var(--color-green-700);
+}
+
+.cardDesc {
+  font-size: var(--fs-sm);
+  color: var(--color-gray-700);
+  margin: var(--space-2) 0 var(--space-3);
+}
+
+.meta {
+  font-size: var(--fs-xs);
+  color: var(--color-gray-500);
+  margin: 0 0 var(--space-3);
+}
+
+.openBtn {
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-mauve-100);
+  color: var(--color-mauve-700);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.openBtn:hover {
+  background: var(--color-mauve-300);
+}
+
+.body {
+  border-top: 1px solid var(--color-gray-100);
+  margin-top: var(--space-4);
+  padding-top: var(--space-4);
+}
+
+.cardContenu {
+  font-size: var(--fs-sm);
+  color: var(--color-gray-700);
+  white-space: pre-wrap; /* respecte les retours à la ligne saisis par le prof */
+  margin: 0 0 var(--space-4);
+}
+
+.files {
+  margin-bottom: var(--space-4);
+}
+
+.filesLabel {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--color-gray-500);
+  margin-bottom: var(--space-1);
+}
+
+.files ul {
+  margin: 0;
+  padding-left: var(--space-4);
+}
+
+.files a {
+  font-size: var(--fs-sm);
+  color: var(--color-green-700);
+}
+
+.files a:hover {
+  text-decoration: underline;
+}
+
+.finishBtn {
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-green-500);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.finishBtn:hover:not(:disabled) {
+  background: var(--color-green-700);
+}
+
+.finishBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

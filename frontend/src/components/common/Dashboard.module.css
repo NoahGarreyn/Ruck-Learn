@@ -1,0 +1,188 @@
+.header {
+  margin-bottom: var(--space-6);
+}
+
+.subtitle {
+  color: var(--color-gray-500);
+  font-size: var(--fs-sm);
+  margin: var(--space-1) 0 0;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-4);
+  align-items: start;
+}
+
+.panel {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-4) var(--space-6);
+}
+
+.panelHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.panelTitle {
+  font-size: var(--fs-lg);
+}
+
+.more {
+  font-size: var(--fs-xs);
+  font-weight: 500;
+}
+
+.more:hover {
+  text-decoration: underline;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.itemMain {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.itemTitle {
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+a.itemTitle:hover {
+  color: var(--color-mauve-700);
+  text-decoration: underline;
+}
+
+.itemMeta {
+  font-size: var(--fs-xs);
+  color: var(--color-gray-500);
+}
+
+.urgent {
+  color: var(--color-danger);
+  font-weight: 600;
+}
+
+.empty {
+  color: var(--color-gray-500);
+  font-size: var(--fs-sm);
+  margin: 0;
+}
+
+.error {
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+}
+
+/* --- Pastilles de type (devoir, quiz, cours, événement) --- */
+.kind {
+  flex-shrink: 0;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-sm);
+}
+
+.kind_cours {
+  background: var(--color-mauve-100);
+  color: var(--color-mauve-700);
+}
+
+.kind_devoir {
+  background: var(--color-warning-bg);
+  color: var(--color-warning);
+}
+
+.kind_quiz {
+  background: var(--color-green-100);
+  color: var(--color-green-700);
+}
+
+.kind_evenement {
+  background: var(--color-gray-100);
+  color: var(--color-gray-700);
+}
+
+/* --- Barre de progression --- */
+.progressText {
+  font-size: var(--fs-sm);
+  color: var(--color-gray-700);
+  margin: 0 0 var(--space-2);
+}
+
+.bar {
+  height: 10px;
+  background: var(--color-gray-100);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  background: var(--color-green-500);
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+/* --- Raccourcis (admin) --- */
+.shortcuts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.shortcut {
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-mauve-100);
+  color: var(--color-mauve-700);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+}
+
+.shortcut:hover {
+  background: var(--color-mauve-300);
+}
+
+.count {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--color-mauve-700);
+}

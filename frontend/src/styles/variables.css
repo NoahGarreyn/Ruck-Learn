@@ -1,0 +1,85 @@
+/* ============================================
+   RuckLearn — Design Tokens
+   Palette Figma : mauve clair / blanc / vert clair
+   Centraliser les couleurs ici = un seul point
+   de vérité si le thème évolue.
+   ============================================ */
+
+:root {
+  /* --- Couleurs primaires (mauve) --- */
+  --color-mauve-50:  #F6F1FA;
+  --color-mauve-100: #E9DDF3;
+  --color-mauve-300: #C9A9E0;
+  --color-mauve-500: #A57BC7;
+  --color-mauve-700: #7C4FA0;
+
+  /* --- Couleurs secondaires (vert clair) --- */
+  --color-green-50:  #EFFAF3;
+  --color-green-100: #D6F0DF;
+  --color-green-300: #A8D8B9;
+  --color-green-500: #6FB98A;
+  --color-green-700: #4A8F65;
+
+  /* --- Neutres --- */
+  --color-white:      #FFFFFF;
+  --color-bg:         #FBFAFD;
+  --color-gray-100:   #F2F1F5;
+  --color-gray-300:   #D8D6E0;
+  --color-gray-500:   #8A879A;
+  --color-gray-700:   #4C4959;
+  --color-text:       #2E2B3A;
+
+  /* --- États --- */
+  --color-danger:     #E0687A;
+  --color-danger-bg:  #FCE9EC;
+  --color-warning:    #E0B25E;
+  --color-warning-bg: #FBF3E3;
+
+  /* --- Typographie --- */
+  --font-display: 'Sora', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 2rem;
+
+  /* --- Espacement (échelle 4px) --- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+
+  /* --- Rayons et ombres --- */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --shadow-card: 0 2px 8px rgba(124, 79, 160, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  color: var(--color-text);
+  margin: 0;
+}
+
+a {
+  color: var(--color-mauve-700);
+  text-decoration: none;
+}

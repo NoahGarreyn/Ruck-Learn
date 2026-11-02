@@ -1,0 +1,31 @@
+/* frontend/src/components/common/Sidebar.module.css */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  width: 220px;
+  flex-shrink: 0;
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-card);
+  height: fit-content;
+}
+
+.link {
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sm);
+  color: var(--color-gray-700);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.link:hover {
+  background: var(--color-mauve-50);
+}
+
+.active {
+  background: var(--color-mauve-100);
+  color: var(--color-mauve-700);
+}

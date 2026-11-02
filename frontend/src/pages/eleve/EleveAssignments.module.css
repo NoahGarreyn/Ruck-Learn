@@ -1,0 +1,195 @@
+.empty {
+  color: var(--color-gray-500);
+  margin-top: var(--space-4);
+}
+
+.errorPage {
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+  max-width: 640px;
+}
+
+.card {
+  background: var(--color-white);
+  padding: var(--space-6);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.cardTitle {
+  font-size: var(--fs-lg);
+  color: var(--color-mauve-700);
+}
+
+.badgeOpen {
+  padding: var(--space-1) var(--space-3);
+  background: var(--color-green-100);
+  color: var(--color-green-700);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.badgeLate {
+  padding: var(--space-1) var(--space-3);
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.cardDesc {
+  font-size: var(--fs-sm);
+  color: var(--color-gray-700);
+  margin-top: var(--space-2);
+  white-space: pre-wrap;
+}
+
+.cardDeadline {
+  font-size: var(--fs-xs);
+  color: var(--color-gray-500);
+  margin-top: var(--space-2);
+}
+
+.files {
+  border-top: 1px solid var(--color-gray-100);
+  margin-top: var(--space-4);
+  padding-top: var(--space-3);
+}
+
+.filesLabel {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--color-gray-500);
+  margin-bottom: var(--space-1);
+}
+
+.files ul {
+  margin: 0;
+  padding-left: var(--space-4);
+}
+
+.files a {
+  font-size: var(--fs-sm);
+  color: var(--color-green-700);
+}
+
+.files a:hover {
+  text-decoration: underline;
+}
+
+.submitted {
+  border-top: 1px solid var(--color-gray-100);
+  margin-top: var(--space-4);
+  padding-top: var(--space-3);
+}
+
+.submittedLabel {
+  color: var(--color-green-700);
+  font-weight: 600;
+  font-size: var(--fs-sm);
+}
+
+.note {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  margin-top: var(--space-1);
+}
+
+.pending {
+  font-size: var(--fs-sm);
+  color: var(--color-gray-500);
+  margin-top: var(--space-1);
+}
+
+.commentaire {
+  font-size: var(--fs-sm);
+  color: var(--color-gray-700);
+  margin-top: var(--space-2);
+  font-style: italic;
+}
+
+.lateMessage {
+  border-top: 1px solid var(--color-gray-100);
+  margin-top: var(--space-4);
+  padding-top: var(--space-3);
+  color: var(--color-danger);
+  font-size: var(--fs-sm);
+}
+
+.form {
+  border-top: 1px solid var(--color-gray-100);
+  margin-top: var(--space-4);
+  padding-top: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.textarea {
+  padding: var(--space-3);
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  resize: vertical;
+}
+
+.textarea:focus {
+  outline: 2px solid var(--color-mauve-300);
+  border-color: var(--color-mauve-500);
+}
+
+.fileList {
+  margin: 0;
+  padding-left: var(--space-4);
+  font-size: var(--fs-xs);
+  color: var(--color-gray-500);
+}
+
+.button {
+  align-self: flex-start;
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-mauve-500);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button:hover:not(:disabled) {
+  background: var(--color-mauve-700);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+}

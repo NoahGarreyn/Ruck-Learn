@@ -1,0 +1,250 @@
+.subtitle {
+  color: var(--color-gray-500);
+  font-size: var(--fs-sm);
+  margin-bottom: var(--space-6);
+}
+
+.backLink {
+  display: inline-block;
+  font-size: var(--fs-sm);
+  color: var(--color-mauve-700);
+  margin-bottom: var(--space-4);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 640px;
+  background: var(--color-white);
+  padding: var(--space-6);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+
+.row {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.row .field {
+  flex: 1;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.field label {
+  font-size: var(--fs-sm);
+  font-weight: 500;
+}
+
+.field input,
+.field select,
+.field textarea {
+  padding: var(--space-3);
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  resize: vertical;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus,
+.textInput:focus {
+  outline: 2px solid var(--color-mauve-300);
+  border-color: var(--color-mauve-500);
+}
+
+.sectionTitle {
+  font-size: var(--fs-lg);
+  margin-top: var(--space-2);
+}
+
+.questionBlock {
+  background: var(--color-bg);
+  border: 1px solid var(--color-gray-100);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.questionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--color-mauve-700);
+}
+
+.textInput {
+  flex: 1;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  background: var(--color-white);
+}
+
+.hint {
+  font-size: var(--fs-xs);
+  color: var(--color-gray-500);
+  margin: 0;
+}
+
+.choiceRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.choiceRow input[type='radio'] {
+  accent-color: var(--color-mauve-500);
+}
+
+.removeBtn {
+  background: none;
+  border: none;
+  color: var(--color-danger);
+  font-size: var(--fs-xs);
+  cursor: pointer;
+}
+
+.removeBtn:hover {
+  text-decoration: underline;
+}
+
+.ghostBtn {
+  align-self: flex-start;
+  padding: var(--space-1) var(--space-3);
+  background: var(--color-mauve-100);
+  color: var(--color-mauve-700);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.ghostBtn:hover:not(:disabled) {
+  background: var(--color-mauve-300);
+}
+
+.ghostBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button {
+  padding: var(--space-3);
+  background: var(--color-mauve-500);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button:hover:not(:disabled) {
+  background: var(--color-mauve-700);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.success {
+  background: var(--color-green-100);
+  color: var(--color-green-700);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+  margin-bottom: var(--space-4);
+}
+
+.error {
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+  margin-bottom: var(--space-4);
+}
+
+.empty {
+  color: var(--color-gray-500);
+  margin-top: var(--space-4);
+}
+
+.stats {
+  font-size: var(--fs-sm);
+  color: var(--color-gray-700);
+  margin: var(--space-4) 0;
+}
+
+.listTitle {
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-4);
+}
+
+.table {
+  width: 100%;
+  max-width: 720px;
+  border-collapse: collapse;
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.table th,
+.table td {
+  padding: var(--space-3) var(--space-4);
+  text-align: left;
+  font-size: var(--fs-sm);
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.table th {
+  background: var(--color-mauve-50);
+  color: var(--color-mauve-700);
+  font-weight: 600;
+}
+
+.viewLink {
+  font-size: var(--fs-xs);
+  color: var(--color-mauve-700);
+  font-weight: 500;
+}
+
+.viewLink:hover {
+  text-decoration: underline;
+}
+
+.toggleLabel {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  color: var(--color-gray-700);
+  cursor: pointer;
+}
+
+.toggleLabel input {
+  accent-color: var(--color-mauve-500);
+}
+
+.choiceRow input[type='checkbox'] {
+  accent-color: var(--color-mauve-500);
+}
